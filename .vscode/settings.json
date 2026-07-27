@@ -1,3 +1,14 @@
 {
-    "python-envs.defaultEnvManager": "ms-python.python:conda"
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    // 关闭更耗资源的完整类型检查模式
+    "python.analysis.typeCheckingMode": "off",
+    // 限制工作区中用于符号搜索的最大文件数
+    "python.analysis.maxWorkspaceSymbols": 1000,
+    // 将虚拟环境、缓存目录等排除出索引范围，这是最关键的一步
+    // "python.analysis.exclude": [
+    //     "**/node_modules",
+    //     "**/__pycache__",
+    //     "**/.venv",
+    //     "**/venv"
+    // ]
 }
